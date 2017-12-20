@@ -27,6 +27,7 @@ namespace Xamarin.Forms.Consume.Simple
         public TModel Model {
             get
             {
+                if (_Model == null) _Model = new TModel();
                 foreach (var gen in Generators)
                     gen(_Model);
                 return _Model;
