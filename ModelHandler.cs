@@ -23,16 +23,17 @@ namespace Xamarin.Forms.Consume.Simple
 
         List<Action> ClearErrors = new List<Action>();
 
+        TModel _Model;
         public TModel Model {
             get
             {
-                var _Model = new TModel();
                 foreach (var gen in Generators)
                     gen(_Model);
                 return _Model;
             }
             set
             {
+                _Model = value;
                 foreach (var con in Consumers)
                     con(value);
             }
@@ -81,9 +82,7 @@ namespace Xamarin.Forms.Consume.Simple
                 ErrorGenerators.Add(member.Name, errors =>
                 {
                     foreach (string error in errors)
-                    {
                         errorBinder.Add(error);
-                    }
                     if (TextField != null)
                     {
                         if (errors.Count() > 0)

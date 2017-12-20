@@ -4,9 +4,10 @@ using System.Text;
 
 namespace Xamarin.Forms.Consume.Simple
 {
+
     public class ModelListBinder<TModel, TView>  : IModelItemBinder<TView, List<TModel>>
        where TModel : new()
-        where TView : View, IBindableListComponent<TModel>
+       where TView : View, IBindableListComponent<TModel>
 
     {
 

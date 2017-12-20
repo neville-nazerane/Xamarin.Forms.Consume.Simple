@@ -18,6 +18,5 @@ namespace Xamarin.Forms.Consume.Simple
 
         void Clear();
 
-
     }
 }
