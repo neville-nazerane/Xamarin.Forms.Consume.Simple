@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsumeAPI.UI.Simple;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
@@ -7,18 +8,7 @@ using Converter = System.ComponentModel.TypeConverter;
 
 namespace Xamarin.Forms.Consume.Simple
 {
-    public interface IModelItemBinder<TView, TData>
-    {
 
-        TView View { get; set; }
-
-        TData Value { get; set; }
-
-        void OnError();
-
-        void ClearError();
-
-    }
 
     public abstract class GenericModelEntryBinder<TEntry, TData> : IModelItemBinder<TEntry, TData>
         where TEntry : Entry

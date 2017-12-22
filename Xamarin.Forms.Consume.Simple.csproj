@@ -3,14 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.0</TargetFramework>
     <PackageId>Xamarin.Forms.Consume.Simple</PackageId>
-    <PackageVersion>3.0.6-beta</PackageVersion>
+    <PackageVersion>3.1.0-beta</PackageVersion>
     <Authors>Neville Nazerane</Authors>
     <Description>
       Library for xamarin forms to link components to information consumed with the ConsumeAPI.Simple
     </Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>
-      - Bug fix: null pointer if model wasn't initialized in modelhandler
+      - Updated to be linked with ConsumeAPI.UI.Simple package
     </PackageReleaseNotes>
     <PackageTags>xamarin.forms consume api netcore.simple</PackageTags>
     <!--<PackageIconUrl>http://netcoresimple.azurewebsites.net/content/themes/icon.png</PackageIconUrl>-->
@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <PackageReference Include="ConsumeAPI.Simple" Version="1.4.1-beta" />
+    <PackageReference Include="ConsumeAPI.UI.Simple" Version="1.0.1-beta" />
     <PackageReference Include="Xamarin.Forms" Version="2.4.0.38779" />
   </ItemGroup>
 

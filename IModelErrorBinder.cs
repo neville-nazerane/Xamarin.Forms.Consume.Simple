@@ -1,20 +1,10 @@
-﻿using System;
+﻿using ConsumeAPI.UI.Simple;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Xamarin.Forms.Consume.Simple
 {
-    public interface IModelErrorBinder<TView>
-        where TView : View
-    {
-
-        TView View { get; set; }
-
-        void Add(string error);
-
-        void Clear();
-
-    }
 
     public abstract class GenericStackErrorBinder<TLabel, TStackLayout> : IModelErrorBinder<TStackLayout>
         where TStackLayout : StackLayout
