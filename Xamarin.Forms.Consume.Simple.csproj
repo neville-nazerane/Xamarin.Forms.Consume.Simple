@@ -3,14 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.0</TargetFramework>
     <PackageId>Xamarin.Forms.Consume.Simple</PackageId>
-    <PackageVersion>3.1.0-beta</PackageVersion>
+    <PackageVersion>3.1.1-beta</PackageVersion>
     <Authors>Neville Nazerane</Authors>
     <Description>
       Library for xamarin forms to link components to information consumed with the ConsumeAPI.Simple
     </Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>
-      - Updated to be linked with ConsumeAPI.UI.Simple package
+      - Removed unwanted class present in the UI package
     </PackageReleaseNotes>
     <PackageTags>xamarin.forms consume api netcore.simple</PackageTags>
     <!--<PackageIconUrl>http://netcoresimple.azurewebsites.net/content/themes/icon.png</PackageIconUrl>-->
